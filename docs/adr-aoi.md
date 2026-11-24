@@ -27,7 +27,7 @@
 你可以在本机新建一个目录，将这 5 天的练习都放进去：
 
 ```text
-apple-mqe-interview/
+hardware_testing_and_scientific_computing/
 ├── data/
 │   ├── raw/                  # 原始数据
 │   └── processed/            # 清洗和处理后的数据
@@ -55,8 +55,8 @@ apple-mqe-interview/
 如果你使用 `uv`，可以参考：
 
 ```bash
-mkdir apple-mqe-interview
-cd apple-mqe-interview
+mkdir hardware_testing_and_scientific_computing
+cd hardware_testing_and_scientific_computing
 
 uv init
 uv add pandas numpy matplotlib seaborn scikit-learn jupyter
