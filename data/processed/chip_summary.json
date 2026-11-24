@@ -1,0 +1,221 @@
+{
+  "overall": {
+    "dies": 71907,
+    "fpy": 0.925431,
+    "final_yield": 0.932009,
+    "retested": 5348,
+    "recovery_rate": 0.088444
+  },
+  "suspects": [
+    {
+      "lot": "L04",
+      "station": "T02",
+      "site": 3,
+      "kind": "site hotspot",
+      "dies": 687,
+      "fpy": 0.663755,
+      "rest_fpy": 0.948022,
+      "top_test": "CONT_VDD",
+      "top_test_fail_rate": 0.275109,
+      "top_test_rest_fail_rate": 0.0,
+      "recovery_rate": 0.554113,
+      "rest_recovery_rate": 0.055814
+    },
+    {
+      "lot": "L05",
+      "station": "T01",
+      "site": null,
+      "kind": "station hotspot",
+      "dies": 3594,
+      "fpy": 0.872009,
+      "rest_fpy": 0.949212,
+      "top_test": "SCAN_FMAX",
+      "top_test_fail_rate": 0.089872,
+      "top_test_rest_fail_rate": 0.006858,
+      "recovery_rate": 0.071895,
+      "rest_recovery_rate": 0.058824
+    },
+    {
+      "lot": "L08",
+      "station": "T01",
+      "site": null,
+      "kind": "station hotspot",
+      "dies": 3595,
+      "fpy": 0.872879,
+      "rest_fpy": 0.943991,
+      "top_test": "SCAN_FMAX",
+      "top_test_fail_rate": 0.087344,
+      "top_test_rest_fail_rate": 0.007975,
+      "recovery_rate": 0.070175,
+      "rest_recovery_rate": 0.026578
+    },
+    {
+      "lot": "L06",
+      "station": "T03",
+      "site": null,
+      "kind": "noise",
+      "dies": 2701,
+      "fpy": 0.908182,
+      "rest_fpy": 0.933884,
+      "top_test": "VMIN",
+      "top_test_fail_rate": 0.042207,
+      "top_test_rest_fail_rate": 0.0,
+      "recovery_rate": 0.41129,
+      "rest_recovery_rate": 0.081928
+    }
+  ],
+  "clusters": [
+    {
+      "lot_id": "L03",
+      "wafer_id": "07",
+      "largest_cluster": 61
+    }
+  ],
+  "lot_process_shift": [
+    "L07"
+  ],
+  "pat": {
+    "passing_dies": 66381,
+    "residual": {
+      "k=3.5": {
+        "flagged": 157,
+        "true_weak_flagged": 141,
+        "precision": 0.898089,
+        "recall": 0.705,
+        "weak_total": 200
+      },
+      "k=4.0": {
+        "flagged": 113,
+        "true_weak_flagged": 107,
+        "precision": 0.946903,
+        "recall": 0.535,
+        "weak_total": 200
+      }
+    },
+    "static_k6": {
+      "flagged": 0,
+      "true_weak_flagged": 0,
+      "precision": null,
+      "recall": 0.0,
+      "weak_total": 200
+    }
+  },
+  "order_optimization": {
+    "full_time_ms": 2350.0,
+    "current_ms": 2250.302752,
+    "optimized_ms": 2216.75275,
+    "saving": 0.014909
+  },
+  "evaluation": {
+    "overall": {
+      "scope": "all",
+      "intrinsic_good": 67429,
+      "overkill_first": 984,
+      "overkill_final": 568,
+      "intrinsic_bad": 4478,
+      "escape_first": 100,
+      "escape_final": 157,
+      "overkill_rate_first": 0.014593,
+      "overkill_rate_final": 0.008424,
+      "escape_rate_final": 0.03506
+    },
+    "by_lot": [
+      {
+        "lot_id": "L01",
+        "intrinsic_good": 8506,
+        "overkill_first": 18,
+        "overkill_final": 3,
+        "intrinsic_bad": 486,
+        "escape_first": 16,
+        "escape_final": 25,
+        "overkill_rate_first": 0.002116,
+        "overkill_rate_final": 0.000353,
+        "escape_rate_final": 0.05144
+      },
+      {
+        "lot_id": "L02",
+        "intrinsic_good": 8526,
+        "overkill_first": 17,
+        "overkill_final": 3,
+        "intrinsic_bad": 460,
+        "escape_first": 19,
+        "escape_final": 24,
+        "overkill_rate_first": 0.001994,
+        "overkill_rate_final": 0.000352,
+        "escape_rate_final": 0.052174
+      },
+      {
+        "lot_id": "L03",
+        "intrinsic_good": 8449,
+        "overkill_first": 18,
+        "overkill_final": 3,
+        "intrinsic_bad": 537,
+        "escape_first": 13,
+        "escape_final": 18,
+        "overkill_rate_first": 0.00213,
+        "overkill_rate_final": 0.000355,
+        "escape_rate_final": 0.03352
+      },
+      {
+        "lot_id": "L04",
+        "intrinsic_good": 8505,
+        "overkill_first": 199,
+        "overkill_final": 55,
+        "intrinsic_bad": 474,
+        "escape_first": 11,
+        "escape_final": 19,
+        "overkill_rate_first": 0.023398,
+        "overkill_rate_final": 0.006467,
+        "escape_rate_final": 0.040084
+      },
+      {
+        "lot_id": "L05",
+        "intrinsic_good": 8486,
+        "overkill_first": 240,
+        "overkill_final": 195,
+        "intrinsic_bad": 503,
+        "escape_first": 9,
+        "escape_final": 13,
+        "overkill_rate_first": 0.028282,
+        "overkill_rate_final": 0.022979,
+        "escape_rate_final": 0.025845
+      },
+      {
+        "lot_id": "L06",
+        "intrinsic_good": 8541,
+        "overkill_first": 216,
+        "overkill_final": 90,
+        "intrinsic_bad": 452,
+        "escape_first": 4,
+        "escape_final": 14,
+        "overkill_rate_first": 0.02529,
+        "overkill_rate_final": 0.010537,
+        "escape_rate_final": 0.030973
+      },
+      {
+        "lot_id": "L07",
+        "intrinsic_good": 7957,
+        "overkill_first": 35,
+        "overkill_final": 16,
+        "intrinsic_bad": 1038,
+        "escape_first": 18,
+        "escape_final": 32,
+        "overkill_rate_first": 0.004399,
+        "overkill_rate_final": 0.002011,
+        "escape_rate_final": 0.030829
+      },
+      {
+        "lot_id": "L08",
+        "intrinsic_good": 8459,
+        "overkill_first": 241,
+        "overkill_final": 203,
+        "intrinsic_bad": 528,
+        "escape_first": 10,
+        "escape_final": 12,
+        "overkill_rate_first": 0.02849,
+        "overkill_rate_final": 0.023998,
+        "escape_rate_final": 0.022727
+      }
+    ]
+  }
+}

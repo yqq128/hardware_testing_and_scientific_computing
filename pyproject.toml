@@ -1,0 +1,39 @@
+[project]
+name = "apple-mqe-interview"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "seaborn>=0.13.2",
+    "streamlit>=1.67.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# 项目不是可安装的包，把仓库根放进 sys.path，测试和 AppTest 才能 import aoi。
+pythonpath = ["."]
+markers = [
+    "slow: 需要实际执行 Notebook，日常开发可用 -m 'not slow' 跳过",
+]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = ["B018"]

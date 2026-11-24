@@ -1,0 +1,34 @@
+{
+  "model": "LogisticRegression",
+  "features": [
+    "aoi_score",
+    "brightness",
+    "contrast",
+    "defect_type"
+  ],
+  "target_recall_on_valid": 0.98,
+  "chosen_threshold": 0.05,
+  "validation_pr_auc": 0.8999790352831272,
+  "validation_pr_auc_aoi_score_only": 0.8826381778647818,
+  "test": {
+    "alarms": 835,
+    "to_review": 557,
+    "auto_released": 278,
+    "workload_reduction": 0.332934131736527,
+    "defects": 133,
+    "defects_missed": 2,
+    "recall": 0.9849624060150376,
+    "recall_ci95": [
+      0.9467356013821775,
+      0.9981736611688586
+    ],
+    "false_positives": 702,
+    "false_positives_released": 276,
+    "end_to_end_defect_retention": 0.9528301886792453,
+    "aoi_recall_first_pass": 0.9716981132075472
+  },
+  "leakage_demo_pr_auc_mean": {
+    "Random split by row (leaky)": 0.8715180611263172,
+    "Random split grouped by product_id": 0.8543525836431837
+  }
+}
